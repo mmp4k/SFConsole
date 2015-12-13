@@ -55,7 +55,7 @@ _complete_sf2_app_console() {
     cur="${COMP_WORDS[COMP_CWORD]}"
 
     # Assume first word is the actual app/console command
-    console="${COMP_WORDS[0]}"
+    console="app/console"
 
     if [[ ${COMP_CWORD} == 1 ]] ; then
         # No command found, return the list of available commands
@@ -71,3 +71,4 @@ _complete_sf2_app_console() {
 
 export COMP_WORDBREAKS="\ \"\\'><=;|&("
 complete -F _complete_sf2_app_console console
+complete -F _complete_sf2_app_console sf

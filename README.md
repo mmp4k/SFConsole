@@ -10,9 +10,10 @@ Usage:
 Load the script (or add to your .bashrc)
 
     source ./console_completion.sh
+    alias sf="php app/console"
 
-After this, using 
+After this, using
 
-    ./app/console <TAB>
+    sf <TAB>
 
 will autocomplete both commands and its arguments.
